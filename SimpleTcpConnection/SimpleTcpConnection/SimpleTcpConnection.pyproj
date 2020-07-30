@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>09e77599-20ab-4a68-b698-66988cddfc61</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>SimpleTcpConnection.py</StartupFile>
+    <StartupFile>tcp_client.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,7 +21,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="SimpleTcpConnection.py" />
+    <Compile Include="tcp_client.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tcp_server.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
